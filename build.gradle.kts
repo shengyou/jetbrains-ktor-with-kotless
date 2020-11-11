@@ -19,7 +19,6 @@ application {
 }
 
 repositories {
-    mavenLocal()
     jcenter()
     mavenCentral()
     maven { url = uri("https://kotlin.bintray.com/ktor") }
@@ -32,6 +31,7 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     implementation("io.ktor:ktor-server-core:$ktor_version")
     implementation("io.ktor:ktor-jackson:$ktor_version")
+    implementation("com.github.javafaker:javafaker:1.0.2")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.1.0")
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
