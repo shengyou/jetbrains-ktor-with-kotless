@@ -8,6 +8,7 @@ val logback_version: String by project
 plugins {
     application
     kotlin("jvm") version "1.3.72"
+    kotlin("plugin.serialization") version "1.3.72"
 }
 
 group = "io.kraftsman"
@@ -30,6 +31,7 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     implementation("io.ktor:ktor-server-core:$ktor_version")
     implementation("io.ktor:ktor-jackson:$ktor_version")
+
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
 }
 
