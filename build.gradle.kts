@@ -7,7 +7,7 @@ val logback_version: String by project
 
 plugins {
     application
-    kotlin("jvm") version "1.3.70"
+    kotlin("jvm") version "1.3.72"
 }
 
 group = "io.kraftsman"
@@ -20,6 +20,7 @@ application {
 repositories {
     mavenLocal()
     jcenter()
+    mavenCentral()
     maven { url = uri("https://kotlin.bintray.com/ktor") }
 }
 
