@@ -44,3 +44,14 @@ kotlin.sourceSets["test"].kotlin.srcDirs("test")
 
 sourceSets["main"].resources.srcDirs("resources")
 sourceSets["test"].resources.srcDirs("testresources")
+
+kotless {
+    config {
+        bucket = "..."
+
+        terraform {
+            profile = "..."
+            region = "..."
+        }
+    }
+}
